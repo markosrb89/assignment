@@ -1,0 +1,47 @@
+.container {
+    margin: 30px auto;
+
+    &__input {
+        height: 40px;
+        margin: 10px;
+        width: 94%;
+        box-sizing: border-box;
+        padding: 0;
+        border-radius: 0;
+        line-height: 70px;
+        background-color: transparent;
+        color: white;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #827f7f;
+        text-align: center;
+        
+        &::placeholder {
+            text-align: center;
+        }
+    }
+}
+  
+@media(min-width: 576px) {
+    .container {
+        max-width: $max-width-sm;
+    }
+}
+
+@media(min-width: 768px) {
+    .container {
+        max-width: $max-width-md;
+    }
+}
+
+@media(min-width: 992px) {
+    .container {
+        max-width: $max-width-lg;
+    }
+}
+
+@media(min-width: 1200px) {
+    .container {
+        max-width: $max-width-xl;
+    }
+}
